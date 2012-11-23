@@ -48,8 +48,10 @@ set nowb
 " Only works all the time.
 
 silent !mkdir ~/.vim/backups > /dev/null 2>&1
-set undodir=~/.vim/backups
-set undofile
+if version >= 703
+    set undodir=~/.vim/backups
+    set undofile
+endif
 
 " ================ Indentation ======================
 
