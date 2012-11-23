@@ -1,0 +1,44 @@
+[user]
+    name = nmalzieu
+[color]
+    diff   = auto
+    branch = auto
+    status = auto
+    pager  = true
+    ui     = auto
+[color "diff"]
+    meta = bold yellow
+    frag = bold cyan
+    old  = bold red
+    new  = bold green
+[color "status"]
+    header    = bold yellow
+    added     = bold green
+    changed   = bold red
+    untracked = white
+[gc]
+    packrefs = true
+[alias]
+    ci = commit
+    fmerge = "!git diff --name-only $(git merge-base production HEAD) HEAD"
+    co = checkout
+    st = status
+    br = branch
+    patches = log -p
+    tree = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)'"
+    tree-all = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)' --all"
+[core]
+    editor = vim
+    excludesfile = /home/noe/.git/info/exclude
+    legacyheaders = false
+    pager = less -+e
+[branch]
+    autosetuprebase = always
+[repack]
+    usedeltabaseoffset = true
+[difftool]
+    prompt = false
+[github]
+    user = nmalzieu
+[push]
+    default = tracking
