@@ -122,8 +122,6 @@ bind ^h
 bind h
 #make them better
 bind 'K' kill
-bind 'I' login on
-bind 'O' login off
 bind '}' history
 
 # Yet another hack:
@@ -159,8 +157,8 @@ bind ^] paste [.]
 caption always "%{+u wk}%?%-w%?%{rk}/%n %t\%{wk}%?%+w%?"
 
 # heure, date ...
-hardstatus alwayslastline "%{kw}%H%{kg}|%c|%{ky}%d.%m.%Y|%-0=%{kw}"
+hardstatus alwayslastline "%{kw}%H%{kg}|%c:%s|%{ky}%d.%m.%Y|%-0=%{kw}"
 
 # default windows
-screen -t deb
+screen -t bash
 
