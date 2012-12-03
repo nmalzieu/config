@@ -44,6 +44,8 @@ defscrollback 10000
 # xterm tweaks
 #
 
+term screen-256color
+
 #xterm understands both im/ic and doesn't have a status line.
 #Note: Do not specify im and ic in the real termcap/info file as
 #some programs (e.g. vi) will not work anymore.
