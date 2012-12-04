@@ -106,6 +106,9 @@ termcapinfo linux C8
 # old rxvt versions also need this
 # termcapinfo rxvt C8
 
+# forcing background color replace
+
+defbce "on"
 
 ################
 #
