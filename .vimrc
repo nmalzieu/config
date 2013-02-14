@@ -105,4 +105,4 @@ set sidescroll=1
 
 " ================  Display  ========================
 
-set ls=2                "Always display filename at bottom"
+set ls=2                "Always display statusline filename at bottom
