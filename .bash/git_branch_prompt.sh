@@ -4,11 +4,11 @@ function find_git_branch {
       if [ -f "$dir/.git/HEAD" ]; then
          head=$(< "$dir/.git/HEAD")
          if [[ $head == ref:\ refs/heads/* ]]; then
-            git_branch=" (${head#*/*/})"
+            git_branch="${head#*/*/}"
          elif [[ $head != '' ]]; then
-            git_branch=' (detached)'
+            git_branch='detached'
          else
-            git_branch=' (unknown)'
+            git_branch='unknown'
          fi
          return
       fi
@@ -29,7 +29,7 @@ function find_git_dirty {
 PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 
 # Default Git enabled prompt with dirty state
-export PS1="\u@\h \w\[$txtcyn\]\$git_branch\[$txtylw\]\$git_dirty\[$txtrst\]\$ "
-
+#export PS1="\u@\h \w\[$txtgrn\] (\$$git_branch$git_dirty)\[$txtrst\] \$ "
+export PS1="\u@\h \w\[$txtgrn\] (\$git_branch\$git_dirty) \[$txtrst\]\$ "
 # Default Git enabled root prompt (for use with "sudo -s")
-export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ 
+export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w \$ "
