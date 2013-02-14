@@ -100,3 +100,9 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+"
+
+" ================  Display  ========================
+
+set ls=2                "Always display filename at bottom"
