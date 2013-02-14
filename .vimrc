@@ -2,8 +2,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 syntax on
-colorscheme molokai
 set t_Co=256
+colorscheme molokai
 let g:molokai_original = 0
 
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
