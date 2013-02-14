@@ -26,9 +26,18 @@ function find_git_dirty {
         git_dirty='*'
     fi
 }
-PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
+
+function set_git_prompt {
+    if [[ $git_branch == "" ]]; then
+        git_prompt=''
+    else
+        git_prompt=" ($git_branch$git_dirty)"
+    fi
+}
+
+#PROMPT_COMMAND="find_git_branch; find_git_dirty; set_git_prompt; $PROMPT_COMMAND"
 
 # Default Git enabled prompt with dirty state
-export PS1="[\u@\h \W]\[$txtgrn\] (\$git_branch\$git_dirty) \[$txtrst\]\$ "
+export PS1="[\u@\h \W]\[$txtgrn\]\$git_prompt \[$txtrst\]\$ "
 # Default Git enabled root prompt (for use with "sudo -s")
 export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w \$ "
