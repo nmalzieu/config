@@ -35,7 +35,7 @@ function set_git_prompt {
     fi
 }
 
-#PROMPT_COMMAND="find_git_branch; find_git_dirty; set_git_prompt; $PROMPT_COMMAND"
+PROMPT_COMMAND="find_git_branch; find_git_dirty; set_git_prompt; $PROMPT_COMMAND"
 
 # Default Git enabled prompt with dirty state
 export PS1="[\u@\h \W]\[$txtgrn\]\$git_prompt \[$txtrst\]\$ "
