@@ -29,7 +29,6 @@
     tree-all = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)' --all"
 [core]
     editor = vim
-    excludesfile = ~/.git/info/exclude
     legacyheaders = false
     pager = less -+e
 [branch]
