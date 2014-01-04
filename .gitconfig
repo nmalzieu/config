@@ -39,6 +39,8 @@
     prompt = false
 [github]
     user = nmalzieu
+[heroku]
+    account=nmalzieu
 [push]
     default = tracking
 [help]
