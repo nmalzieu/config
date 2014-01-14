@@ -163,5 +163,5 @@ caption always "%{+u wk}%?%-w%?%{rk}/%n %t\%{wk}%?%+w%?"
 hardstatus alwayslastline "%{kw}%H%{kg}|%c:%s|%{ky}%d.%m.%Y|%-0=%{kw}"
 
 # default windows
-screen -t bash
+screen -t ~
 
