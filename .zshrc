@@ -93,3 +93,7 @@ alias ortho='ssh produitsq@ftp.ortho-company.com'
 alias biscotte='ssh noe@biscotte.via.ecp.fr'
 alias rpi='ssh -A pi@raspberrypi.local'
 alias rpir='ssh -A pi@citegg.no-ip.biz'
+
+bindkey "^[[5~" history-beginning-search-backward
+
+bindkey "^[[6~" history-beginning-search-forward
