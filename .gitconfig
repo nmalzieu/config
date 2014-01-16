@@ -45,3 +45,5 @@
     default = tracking
 [help]
 	autocorrect = 1
+[merge]
+	defaultToUpstream = true
