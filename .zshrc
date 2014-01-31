@@ -97,3 +97,6 @@ alias rpir='ssh -A pi@citegg.no-ip.biz'
 bindkey "^[[5~" history-beginning-search-backward
 
 bindkey "^[[6~" history-beginning-search-forward
+
+# Add local python packages (homebrew?) to pythonpath
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
