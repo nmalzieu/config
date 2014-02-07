@@ -70,7 +70,7 @@ export PATH="/usr/local/bin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin
 alias toz='ssh noe@toz.via.ecp.fr'
 alias fullpep8='autopep8 -a --in-place --ignore=E501 -r ./'
 alias bdmv='source /Users/noemalzieu/bdm/venv/bin/activate && cd /Users/noemalzieu/bdm/'
-alias vps1='ssh -A noe@198.98.112.132'
+alias vps1='ssh -A noe@198.98.122.143'
 alias toztunnel='ssh -D 1080 noe@toz.via.ecp.fr'
 alias cdesign='ssh root@cd.via.ecp.fr'
 alias cdtunnel='ssh -D 1080 root@cd.via.ecp.fr'
@@ -93,6 +93,7 @@ alias ortho='ssh produitsq@ftp.ortho-company.com'
 alias biscotte='ssh noe@biscotte.via.ecp.fr'
 alias rpi='ssh -A pi@raspberrypi.local'
 alias rpir='ssh -A pi@citegg.no-ip.biz'
+alias ftpdir='python -m SimpleHTTPServer'
 
 bindkey "^[[5~" history-beginning-search-backward
 
