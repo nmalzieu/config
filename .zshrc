@@ -94,6 +94,9 @@ alias biscotte='ssh noe@biscotte.via.ecp.fr'
 alias rpi='ssh -A pi@raspberrypi.local'
 alias rpir='ssh -A pi@citegg.no-ip.biz'
 alias ftpdir='python -m SimpleHTTPServer'
+alias booth='cd ~/ggbooth/ && source venv/ggbooth/bin/activate'
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 bindkey "^[[5~" history-beginning-search-backward
 
