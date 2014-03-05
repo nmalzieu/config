@@ -40,7 +40,7 @@
 [github]
     user = nmalzieu
 [push]
-    default = tracking
+    default = upstream
 [help]
 	autocorrect = 1
 [merge]
