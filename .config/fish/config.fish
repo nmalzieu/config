@@ -58,7 +58,7 @@ function bookin
 end
 
 function bdm
-    ssh -i ~/.ssh/id_dsa.pub bdm@dowie.via.ecp.fr
+    ssh bdm@dowie.via.ecp.fr
 end
 
 function v4
