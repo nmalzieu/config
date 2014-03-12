@@ -14,6 +14,8 @@ if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
 endif
 
+call pathogen#infect()
+
 " ================ General Config ====================
 
 set number                      "Line numbers are good
