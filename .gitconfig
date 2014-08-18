@@ -27,7 +27,7 @@
     patches = log -p
     tree = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)'"
     tree-all = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)' --all"
-    branchdate = "!git for-each-ref --sort=-committerdate --format='%(refname) %(committerdate) %(authorname)' | sed 's/refs\\///g' | sed 's/heads\\///g'"
+    branchdate = "!git for-each-ref --sort=-committerdate --format='%(refname) %(committerdate) %(authorname)' | grep -v 'origin/HEAD' | sed 's/refs\\///g' | sed 's/heads\\///g'"
 [core]
     editor = vim
     legacyheaders = false
