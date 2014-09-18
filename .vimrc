@@ -14,6 +14,11 @@ if filereadable(expand("~/.vimrc.before"))
   source ~/.vimrc.before
 endif
 
+" if using a non POSIX shell (fish), we have to set manually the shell that
+" vim uses
+
+set shell=/bin/bash
+
 call pathogen#infect()
 
 " ================ General Config ====================
