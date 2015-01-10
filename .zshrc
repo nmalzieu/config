@@ -104,3 +104,6 @@ bindkey "^[[6~" history-beginning-search-forward
 
 # Add local python packages (homebrew?) to pythonpath
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
