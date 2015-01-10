@@ -33,7 +33,7 @@
     editor = vim
     legacyheaders = false
     pager = less -+e
-	excludesfile = ~/.config/git/gitignore_global
+    excludesfile = ~/.config/git/gitignore_global
 [branch]
     autosetuprebase = always
 [repack]
