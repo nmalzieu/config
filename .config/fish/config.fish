@@ -5,6 +5,7 @@ set -Ux LSCOLORS Gxfxcxdxbxegedabagacad
 
 set fish_config_path $HOME/.config/fish
 . $fish_config_path/functions.fish
+. $fish_config_path/shared_functions.fish
 
 # Loading oh my fish config
 
