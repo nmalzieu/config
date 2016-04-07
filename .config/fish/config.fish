@@ -1,4 +1,6 @@
-set -Ux fish_theme robbyrussell
+# Path to Oh My Fish install.
+set -gx OMF_PATH "/Users/noemalzieu/.local/share/omf"
+
 set -Ux LSCOLORS Gxfxcxdxbxegedabagacad
 
 # Loading functions
@@ -7,8 +9,7 @@ set fish_config_path $HOME/.config/fish
 . $fish_config_path/functions.fish
 . $fish_config_path/shared_functions.fish
 
-# Loading oh my fish config
+# Load oh-my-fish configuration.
+source $OMF_PATH/init.fish
 
-set fish_path $HOME/.oh-my-fish
-. $fish_path/oh-my-fish.fish
-
+omf theme robbyrussell
