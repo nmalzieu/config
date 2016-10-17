@@ -1,7 +1,7 @@
 # Path to Oh My Fish install.
 set -gx OMF_PATH "$HOME/.local/share/omf"
 
-set -Ux LSCOLORS Gxfxcxdxbxegedabagacad
+set -gx LSCOLORS Gxfxcxdxbxegedabagacad
 
 # Loading functions
 
