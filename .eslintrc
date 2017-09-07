@@ -1,12 +1,10 @@
 {
   "parser"  : "babel-eslint",
   "plugins": [
-    "ava",
     "react-native"
   ],
   "extends" : [
-    "airbnb",
-    "plugin:ava/recommended"
+    "airbnb"
   ],
   "rules": {
     // Soft some rules.
