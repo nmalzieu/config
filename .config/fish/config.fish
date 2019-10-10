@@ -14,3 +14,20 @@ set fish_config_path $HOME/.config/fish
 source $OMF_PATH/init.fish
 
 omf theme robbyrussell
+set -g fish_user_paths "/usr/local/bin" $fish_user_paths
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/noemalzieu/Downloads/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/noemalzieu/Downloads/google-cloud-sdk/path.fish.inc'; else; . '/Users/noemalzieu/Downloads/google-cloud-sdk/path.fish.inc'; end; end
+set -g fish_user_paths "/usr/local/opt/v8@3.15/bin" $fish_user_paths
+set -g fish_user_paths "~/.rbenv/bin" $fish_user_paths
+
+set -gx PATH '/Users/noemalzieu/.rbenv/shims' $PATH
+set -gx PATH '/Users/noemalzieu/google-cloud-sdk/bin' $PATH
+set -gx RBENV_SHELL fish
+source '/usr/local/Cellar/rbenv/1.1.1/libexec/../completions/rbenv.fish'
+command rbenv rehash 2>/dev/null
+
+# YouSign weird fix
+
+set -gx FIXUID (id -u)
+set -gx FIXGID (id -g)
