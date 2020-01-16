@@ -22,12 +22,9 @@ set -g fish_user_paths "/usr/local/opt/v8@3.15/bin" $fish_user_paths
 set -g fish_user_paths "~/.rbenv/bin" $fish_user_paths
 
 set -gx PATH '/Users/noemalzieu/.rbenv/shims' $PATH
-set -gx PATH '/Users/noemalzieu/google-cloud-sdk/bin' $PATH
+set -gx PATH '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin' $PATH
 set -gx RBENV_SHELL fish
-source '/usr/local/Cellar/rbenv/1.1.1/libexec/../completions/rbenv.fish'
+source '/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.fish'
 command rbenv rehash 2>/dev/null
 
-# YouSign weird fix
-
-set -gx FIXUID (id -u)
-set -gx FIXGID (id -g)
+set -g fish_user_paths "/usr/local/opt/node@8/bin" $fish_user_paths
