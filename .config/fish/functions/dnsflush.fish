@@ -1,3 +1,3 @@
 function dnsflush
-    sudo discoveryutil udnsflushcaches
+    sudo killall -HUP mDNSResponder
 end

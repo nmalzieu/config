@@ -6,12 +6,14 @@
     branch = auto
     status = auto
     pager  = true
-    ui     = auto
+	ui = true
 [color "diff"]
-    meta = bold yellow
-    frag = bold cyan
-    old  = bold red
-    new  = bold green
+	meta = 227
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	commit = 227 bold
+	whitespace = red reverse
 [color "status"]
     header    = bold yellow
     added     = bold green
@@ -29,10 +31,12 @@
     tree = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)'"
     tree-all = "log --graph --decorate --abbrev-commit --date-order --pretty=format:'%Cgreen%h%Creset : %s%Cred%d%Creset (%Cblue%an%Creset, %Cblue%ar%Creset)' --all"
     branchdate = "!git for-each-ref --sort=-committerdate --format='%(refname) %(committerdate) %(authorname)' | grep -v 'origin/HEAD' | sed 's/refs\\///g' | sed 's/heads\\///g'"
+    patch = !git --no-pager diff --no-color
+	mylog = !git log --no-merges --author=\"$(git config user.name)\"
 [core]
     editor = vim
     legacyheaders = false
-    pager = less -+e
+	pager = diff-so-fancy | less --tabs=4 -RFX
     excludesfile = ~/.config/git/gitignore_global
 [branch]
     autosetuprebase = always
@@ -48,3 +52,8 @@
 	autocorrect = 1
 [merge]
 	defaultToUpstream = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
