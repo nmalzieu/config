@@ -11,6 +11,8 @@ eval (/opt/homebrew/bin/brew shellenv)
 # Loading functions
 
 set fish_config_path $HOME/.config/fish
+. $fish_config_path/functions.fish
+
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
