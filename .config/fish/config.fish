@@ -19,5 +19,11 @@ source $OMF_PATH/init.fish
 
 omf theme robbyrussell
 set -g fish_user_paths "/usr/local/bin" $fish_user_paths
+fish_add_path "/Users/noemalzieu/Library/Python/3.8/bin"
+fish_add_path "/Users/noemalzieu/.cargo/bin"
+fish_add_path "/opt/homebrew/share/android-commandlinetools/"
 
 set -gx NPM_TOKEN '156f8ab1-039f-43cd-9a3d-ff53502e4b98'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/noemalzieu/google-cloud-sdk/path.fish.inc' ]; . '/Users/noemalzieu/google-cloud-sdk/path.fish.inc'; end
