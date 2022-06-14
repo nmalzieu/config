@@ -4,6 +4,3 @@
 [submodule "~/.vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "cairo_contracts"]
-	url = https://github.com/OpenZeppelin/cairo-contracts
-	path = Desktop/strkwr/starknet/project-1/lib/cairo_contracts
