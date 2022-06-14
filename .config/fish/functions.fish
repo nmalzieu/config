@@ -70,3 +70,7 @@ end
 function nika
     cd /Users/noemalzieu/Documents/Projets/nika
 end
+
+function brow
+    /usr/local/bin/brew $argv
+end
