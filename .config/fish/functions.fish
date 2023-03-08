@@ -74,3 +74,35 @@ end
 function brow
     /usr/local/bin/brew $argv
 end
+
+function cairenv
+    source ~/.cairo_venv/bin/activate.fish
+end
+
+function starknet-dump --argument statename
+    if not test -n "$statename"
+        echo "statename is required";
+    else
+        curl -X POST http://127.0.0.1:5050/dump -d "{ \"path\": \"/Users/noemalzieu/.starknet-devnet/$statename\" }" -H "Content-Type: application/json"
+    end
+end
+
+function starknet-load --argument statename
+    if not test -n "$statename"
+        echo "statename is required";
+    else
+        curl -X POST http://127.0.0.1:5050/load -d "{ \"path\": \"/Users/noemalzieu/.starknet-devnet/$statename\" }" -H "Content-Type: application/json"
+    end
+end
+
+function starknet-dvnt
+    cd /Users/noemalzieu/Documents/Projets/starknet-devnet; and poetry run starknet-devnet --seed 0
+end
+
+function starknet
+    ~/.cairo_venv/bin/starknet $argv
+end
+
+function starknet-devnet
+    ~/.cairo_venv/bin/starknet-devnet $argv
+end

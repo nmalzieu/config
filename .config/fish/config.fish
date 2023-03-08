@@ -5,6 +5,8 @@ set -gx LSCOLORS Gxfxcxdxbxegedabagacad
 
 set -gx VISUAL vim
 
+set -gx ANDROID_HOME "$HOME/Library/Android/sdk"
+
 # Load brew
 eval (/opt/homebrew/bin/brew shellenv)
 
@@ -31,3 +33,4 @@ export PATH="$PATH:/Users/noemalzieu/.starklings/dist/starklings"
 export LIBRARY_PATH=/usr/lib:/opt/homebrew/lib
 
 export PATH="$PATH:/Users/noemalzieu/.protostar/dist/protostar"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
