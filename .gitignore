@@ -1,0 +1,16 @@
+*
+!.gitignore
+!.config/
+!.config/fish/
+!.config/fish/**
+!.config/git/
+!.config/git/gitignore_global
+!.gitconfig
+!.screenrc
+!.vim/
+!.vim/colors/
+!.vim/colors/**
+!.vimrc
+
+# Exclusions inside allowed trees
+.config/fish/config.fish.backup
